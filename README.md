@@ -2,7 +2,7 @@
 
 # codeceptjs-webhooksite-helper
 
-CodeceptJS webhooksite helper wraps [webhooksite apis](https://docs.webhook.site/api/about.html) to test webhooks.
+CodeceptJS webhooksite helper wraps [webhooksite APIs](https://docs.webhook.site/api/about.html) to test webhooks.
 
 NPM package: <https://www.npmjs.com/package/codeceptjs-webhooksite-helper>
 
