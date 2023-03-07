@@ -1,0 +1,51 @@
+{
+  "name": "codeceptjs-webhooksite-helper",
+  "version": "1.0.0",
+  "description": "webhooksite Helper for codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky install",
+    "code:format": "prettier --write ."
+  },
+  "keywords": [
+    "codeceptjs",
+    "webhooksite"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "@codeceptjs/helper": "^2.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "prettier": "2.8.4",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kobenguyent/codeceptjs-webhooksite-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kobenguyent/codeceptjs-webhooksite-helper/issues"
+  },
+  "homepage": "https://github.com/kobenguyent/codeceptjs-webhooksite-helper#readme",
+  "author": "Thanh Nguyen <kobenguyent@gmail.com>",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
