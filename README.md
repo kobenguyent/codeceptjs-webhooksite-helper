@@ -20,7 +20,10 @@ Example:
 {
 ...
    helpers: {
-     WebhooksiteHelper: {
+    REST: {
+      prettyPrintJson: true
+    },
+    WebhooksiteHelper: {
       require: 'codeceptjs-webhooksite-helper',
     }
    }
