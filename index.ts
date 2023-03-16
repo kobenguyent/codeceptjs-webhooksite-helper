@@ -30,11 +30,19 @@ class WebhooksiteHelper extends Helper {
     return `${token}@email.webhook.site`;
   }
 
-  async getDataSentToWebhookSite(token = null) {
+  async _wait(sec) {
+    return new Promise(((done) => {
+      setTimeout(done, sec * 1_000);
+    }));
+  }
+
+  async getDataSentToWebhookSite(token = null, sec = 10) {
     restClient = this._getRestClient();
+    let data
     const _token = token || (await this.getWebhookSiteToken());
     const url = `${endpoint}/token/${_token}/requests`;
-    const data = await restClient.sendGetRequest(url);
+    await this._wait(sec)
+    data = await restClient.sendGetRequest(url);
     return data.data;
   }
 }

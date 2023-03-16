@@ -20,6 +20,7 @@ declare class WebhooksiteHelper {
   /**
    * Get data sent to webhook.site
    * @param  {String} token
+   * @param  {Number} sec waiting secs before getting sent data
    */
-  getDataSentToWebhookSite(token?): Promise<any>;
+  getDataSentToWebhookSite(token?, sec?): Promise<any>;
 }
