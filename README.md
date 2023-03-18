@@ -2,7 +2,7 @@
 
 # codeceptjs-webhooksite-helper
 
-CodeceptJS webhooksite helper wraps [webhooksite APIs](https://docs.webhook.site/api/about.html) to test webhooks.
+CodeceptJS webhooksite helper wraps [webhooksite APIs](https://docs.webhook.site/api/about.html) to test incoming HTTP requests and emails. 
 
 NPM package: <https://www.npmjs.com/package/codeceptjs-webhooksite-helper>
 
@@ -55,7 +55,7 @@ Example:
   getWebhookSiteUniqueEmailAddress(): Promise<string>;
 
   /**
-   * Get data sent to webhook.site
+   * Get data sent to webhook.site, it could be either HTTP requests or email
    * @param  {String} token
    */
   getDataSentToWebhookSite(token?): Promise<any>;
