@@ -1,3 +1,7 @@
 .idea
 package-lock.json
 node_modules
+dist
+test/output
+test/package-lock.json
+test/node_modules
