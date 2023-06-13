@@ -47,10 +47,9 @@ jobs:
           name: allure-reports
           path: |
             ./test/output/allure-reports/*
-      - name: Test marketplace action
+      - name: Allure reports
         uses: PavanMudigonda/html-reporter-github-pages@v1.0
         id: test-report
         with:
-          test_results: ./test/output/allure-reports/complete.html
+          test_results: ./test/output/allure-reports
           gh_pages: gh-pages
-          results_history: results-history
