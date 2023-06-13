@@ -37,7 +37,7 @@ jobs:
         working-directory: ./test
         run: |
           npm i
-          npm run test && npm run allure-reports-generate && npm run patch
+          npm run test && npm run allure-reports-generate && npm run allure-reports-patch
         env:
           MAILINATOR_TOKEN: ${{secrets.MAILINATOR_TOKEN}}
           MAILINATOR_DOMAIN: ${{secrets.MAILINATOR_DOMAIN}}
