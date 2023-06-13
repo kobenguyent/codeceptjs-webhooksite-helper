@@ -46,4 +46,4 @@ jobs:
         with:
           name: allure-report
           path: |
-            output/allure-reports/*
+            ./output/allure-reports/*
