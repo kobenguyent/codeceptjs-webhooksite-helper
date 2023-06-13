@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "codeceptjs run-workers 3"
+    "test": "codeceptjs run-workers 3",
+    "allure-reports-generate": "allure generate ./output -o ./output/allure-reports --clean",
+    "allure-reports-patch": "allure-patch ./output/allure-reports"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "allure-codeceptjs": "^2.4.0",
+    "allure-commandline": "^2.22.1",
+    "allure-patch": "^1.0.3",
     "codeceptjs": "^3.4.1",
     "codeceptjs-expect": "^1.0.3"
   },

@@ -17,4 +17,11 @@ export const config: CodeceptJS.MainConfig = {
 		I: './steps_file',
 	},
 	name: 'test',
+	plugins: {
+		allure: {
+			enabled: true,
+			require: 'allure-codeceptjs',
+			outputDir: './output',
+		},
+	},
 };
