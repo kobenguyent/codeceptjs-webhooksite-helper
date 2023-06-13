@@ -47,9 +47,7 @@ jobs:
           name: allure-reports
           path: |
             ./test/output/allure-reports/*
-      - name: Allure reports
-        uses: PavanMudigonda/html-reporter-github-pages@v1.0
-        id: test-report
+      - name: Allure reports 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          test_results: ./test/output/allure-reports
-          gh_pages: gh-pages
+          folder: ./test/output/allure-reports
