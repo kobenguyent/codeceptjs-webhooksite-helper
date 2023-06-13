@@ -44,6 +44,6 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: allure-report
+          name: allure-reports
           path: |
-            ./output/allure-reports/*
+            ./test/output/allure-reports/*
